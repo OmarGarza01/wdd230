@@ -9,7 +9,7 @@ header,main, footer{
 
 header{
     
-    background-color:rgb(91, 91, 236);
+    background-color:blue;
     padding: 1.5rem;
     border-radius: 5ch;
 }
@@ -22,19 +22,19 @@ width: 200px;
 
 h1{
     text-align: center;
-    color: orange;
+    color:white;
 }
 
 
 footer{
-    background-color: rgb(91, 91, 236);
+    background-color: blue;
     padding: 1.5rem;
     border-radius: 5ch;
     
 }
 
 .footertext, p{
-    color: orange;
+    color: white;
     text-align: center;
     
 }

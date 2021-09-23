@@ -1,0 +1,47 @@
+body {
+  font-size: 16pt;
+}
+
+header,
+main,
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: blue;
+  padding: 1.5rem;
+  border-radius: 5ch;
+}
+
+header img {
+  width: 200px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  font-family: "Domine", serif;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: blue;
+  padding: 1.5rem;
+  border-radius: 5ch;
+}
+
+.footertext,
+p {
+  color: white;
+  text-align: center;
+}
+footer a,
+footer a:visited {
+  color: wheat;
+}

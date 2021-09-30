@@ -1,0 +1,64 @@
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap" rel="stylesheet">
+
+font-family: 'Lora', serif;
+font-family: 'Merriweather', serif;
+
+
+$pacific-blue: #23b5d3ff;
+$pewter-blue: #75abbcff;
+$cadet-blue-crayola: #a2aebbff;
+
+*/
+
+/************Small*****************/
+header,
+nav,
+main,
+footer {
+  max-width: 767px;
+  margin: auto;
+}
+header,
+footer {
+  background-color: #75abbcff;
+}
+main {
+  background-color: #23b5d3ff;
+}
+#pallet {
+  max-width: 400px;
+}
+#logo {
+  max-width: 75px;
+}
+
+nav {
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-family: "Lora", serif;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+}
+
+/****************medium*****************/
+@media only screen and (min-width: 37.5em) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+}

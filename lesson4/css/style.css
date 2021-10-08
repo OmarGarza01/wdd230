@@ -1,0 +1,135 @@
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap" rel="stylesheet">
+
+font-family: 'Lora', serif;
+font-family: 'Merriweather', serif;
+
+
+$pacific-blue: #23b5d3ff;
+$pewter-blue: #75abbcff;
+$cadet-blue-crayola: #a2aebbff;
+
+*/
+
+/*****************************small**************************/
+
+header img {
+  max-width: 100px;
+}
+header {
+  background-color: #23b5d3ff;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header q {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+}
+nav {
+  font-family: "Lora", serif;
+
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  padding: 0.8 2%;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+  display: none;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main section {
+  background-color: #a2aebbff;
+}
+footer {
+  background-color: #23b5d3ff;
+  font-family: "Lora", serif;
+  text-align: center;
+}
+
+/******************Medium*************************/
+@media only screen and (min-width: 35rem) {
+  nav button {
+    display: none;
+  }
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    float: left;
+    font-size: .8em;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 1rem;
+  }
+  nav ul.hide {
+    display: block;
+  }
+
+}
+
+/*****************Large***************************/
+
+@media only screen and (min-width: 64rem) {
+ header h1{
+   font-size: 3em;
+ }
+}

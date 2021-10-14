@@ -1,16 +1,10 @@
 /*
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap" rel="stylesheet">
-
-font-family: 'Lora', serif;
+font-family: 'Lora', serif; 
 font-family: 'Merriweather', serif;
-
 
 $pacific-blue: #23b5d3ff;
 $pewter-blue: #75abbcff;
 $cadet-blue-crayola: #a2aebbff;
-
 */
 
 /*****************************small**************************/
@@ -113,7 +107,7 @@ footer {
   }
   nav ul li {
     float: left;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   nav ul li a {
     border: none;
@@ -123,13 +117,12 @@ footer {
   nav ul.hide {
     display: block;
   }
-
 }
 
 /*****************Large***************************/
 
 @media only screen and (min-width: 64rem) {
- header h1{
-   font-size: 3em;
- }
+  header h1 {
+    font-size: 3em;
+  }
 }

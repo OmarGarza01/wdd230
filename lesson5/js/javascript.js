@@ -22,7 +22,7 @@ button.onclick = function() {
   input.focus();
 }
 
-// cite
+
 function validate(obj) {
   if (obj.value.length > 0) {
       document.getElementById("btn").disabled = false;

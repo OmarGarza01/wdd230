@@ -9,7 +9,7 @@ button.onclick = function() {
   const listItem = document.createElement('li');
   const listText = document.createElement('span');
   const listBtn = document.createElement('button');
-
+   
   listItem.appendChild(listText);
   listText.textContent = myItem;
   listItem.appendChild(listBtn);
@@ -19,6 +19,14 @@ button.onclick = function() {
   listBtn.onclick = function(e) {
     list.removeChild(listItem);
   }
-
   input.focus();
+}
+
+// cite
+function validate(obj) {
+  if (obj.value.length > 0) {
+      document.getElementById("btn").disabled = false;
+  } else {
+      document.getElementById("btn").disabled = true;
+  }
 }

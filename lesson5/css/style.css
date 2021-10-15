@@ -88,14 +88,82 @@ nav ul.hide {
   clear: both;
 }
 
-main section {
-  background-color: #a2aebbff;
-}
 footer {
   background-color: #23b5d3ff;
   font-family: "Lora", serif;
   text-align: center;
 }
+
+.heroimg {
+  width: 100%;
+}
+.hero {
+  position: relative;
+}
+.weathersummary {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background:radial-gradient(#a2aebbff,#75abbcff);
+  border: solid black;
+  padding: 0.5rem;
+}
+img.icon{
+ width: 100px;
+}
+.fivedayforcast{
+  background:radial-gradient(#a2aebbff,#75abbcff);
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+article{
+  padding: 2em;
+  margin-top: 1em;
+  background:radial-gradient(#a2aebbff,#75abbcff);
+}
+.hurr{
+  max-width: 300px;
+  float: right;
+}
+
+img.rgvimg{
+  margin-top: 1em;
+  max-width:100%;
+  height: auto;
+  margin-right: 2px;
+}
+.cont{
+  border: solid black;
+  background-color: blanchedalmond;
+}
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+}
+.banner{
+  background-color: yellow;
+}
+.banner_content{
+  padding: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.banner_text{
+  flex-grow: .3;
+  line-height:1;
+  font-family:'Lora', serif;  ;
+}
+.banner_close{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 
 /******************Medium*************************/
 @media only screen and (min-width: 35rem) {

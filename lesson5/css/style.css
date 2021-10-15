@@ -102,68 +102,70 @@ footer {
 }
 .weathersummary {
   position: absolute;
-  top: 50px;
+  top: 10px;
   left: 50px;
-  background:radial-gradient(#a2aebbff,#75abbcff);
+  background: radial-gradient(#a2aebbff, #75abbcff);
   border: solid black;
   padding: 0.5rem;
 }
-img.icon{
- width: 100px;
+img.icon {
+  width: 100px;
 }
-.fivedayforcast{
-  background:radial-gradient(#a2aebbff,#75abbcff);
+.fivedayforcast_icon {
+  background: radial-gradient(#a2aebbff, #75abbcff);
   padding: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-article{
+article {
   padding: 2em;
   margin-top: 1em;
-  background:radial-gradient(#a2aebbff,#75abbcff);
+  background: radial-gradient(#a2aebbff, #75abbcff);
 }
-.hurr{
+.hurr {
   max-width: 300px;
   float: right;
 }
 
-img.rgvimg{
+img.rgvimg {
   margin-top: 1em;
-  max-width:100%;
+  max-width: 100%;
   height: auto;
   margin-right: 2px;
 }
-.cont{
+.cont {
   border: solid black;
   background-color: blanchedalmond;
 }
-.contact{
+.contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1em;
 }
-.banner{
+.banner {
   background-color: yellow;
 }
-.banner_content{
+.banner_content {
   padding: 1em;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
 }
-.banner_text{
-  flex-grow: .3;
-  line-height:1;
-  font-family:'Lora', serif;  ;
+.banner_text {
+  flex-grow: 0.3;
+  line-height: 1;
+  font-family: "Lora", serif;
 }
-.banner_close{
+.banner_close {
   background: none;
   border: none;
   cursor: pointer;
 }
-
+.fiveday{
+  display: none;
+}
 
 /******************Medium*************************/
 @media only screen and (min-width: 35rem) {
@@ -187,10 +189,15 @@ img.rgvimg{
   }
 }
 
+
+
 /*****************Large***************************/
 
 @media only screen and (min-width: 64rem) {
   header h1 {
     font-size: 3em;
+  }
+  .fiveday{
+    display: contents;
   }
 }

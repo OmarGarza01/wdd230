@@ -1,7 +1,9 @@
+// Menu
 function toggleMenu() {
   document.getElementById("primaryNav").classList.toggle("hide");
 }
 
+// get current date
 const event = new Date();
 const options = {
   weekday: "long",
@@ -20,9 +22,9 @@ document.querySelector(".banner_close").addEventListener("click", function () {
 
 // load banner on friday
 var today = new Date();
-if(today.getDay() == !5) {
+if(today.getDay() != 5) {
   const friday = document.querySelector("#friday")
-  friday.remove();
+  friday.remove()
 }
 
 

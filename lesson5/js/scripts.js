@@ -17,11 +17,12 @@ document.querySelector(".banner_close").addEventListener("click", function () {
   this.closest(".banner").remove();
 });
 
+
 // load banner on friday
-function isFriday() {
-  let today = new Date();
-  let day = today.getDay();
-  if (day != 5) {
-    this.closest(".banner").remove();
-  }
+var today = new Date();
+if(today.getDay() == !5) {
+  const friday = document.querySelector("#friday")
+  friday.remove();
 }
+
+

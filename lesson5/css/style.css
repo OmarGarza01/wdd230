@@ -13,7 +13,8 @@ header img {
   max-width: 100px;
 }
 header {
-  background-color: #23b5d3ff;
+  background:radial-gradient(#a2aebbff, #75abbcff);
+ 
   padding: 5px 0;
   display: flex;
   justify-content: center;
@@ -89,7 +90,7 @@ nav ul.hide {
 }
 
 footer {
-  background-color: #23b5d3ff;
+  background: radial-gradient(#a2aebbff, #75abbcff);
   font-family: "Lora", serif;
   text-align: center;
 }
@@ -137,11 +138,13 @@ img.rgvimg {
 .cont {
   border: solid black;
   background-color: blanchedalmond;
+  padding: 1em;
+  margin-left: 1.5rem;
+  margin-top: 1em;
 }
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1em;
 }
 .banner {
   background-color: yellow;
@@ -165,6 +168,12 @@ img.rgvimg {
 }
 .fiveday{
   display: none;
+}
+body{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#23b5d3ff ;
 }
 
 /******************Medium*************************/

@@ -66,7 +66,7 @@ nav ul {
 }
 nav ul li a {
   display: block;
-  padding: 0.8 2%;
+  padding: 5px;
   text-decoration: none;
   color: white;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
@@ -81,6 +81,9 @@ nav ul li a:hover {
 
 nav ul.hide {
   display: none;
+}
+nav .current{
+  background-color: rgb(0, 60, 255);
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -102,13 +105,13 @@ footer {
   position: relative;
 }
 .weathersummary {
-  position: absolute;
-  top: 10px;
-  left: 50px;
+  margin: 1em;
   background: radial-gradient(#a2aebbff, #75abbcff);
   border: solid black;
-  padding: 0.5rem;
+  padding: 1rem;
+  text-align: center;
 }
+
 img.icon {
   width: 100px;
 }
@@ -196,7 +199,16 @@ body{
   nav ul.hide {
     display: block;
   }
+  .weathersummary {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background: radial-gradient(#a2aebbff, #75abbcff);
+    border: solid black;
+    padding: 0.5rem;
+  }
 }
+
 
 
 

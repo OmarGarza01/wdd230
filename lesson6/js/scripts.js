@@ -12,6 +12,7 @@ const options = {
   year: "numeric",
 };
 const date = event.toLocaleDateString(undefined, options);
+document.getElementById("currentDate").innerHTML = date;
 
 
 // close banner

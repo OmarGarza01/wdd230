@@ -27,20 +27,26 @@
         <li><a href="preston-8.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li><a class="current" href="#">Gallery</a></li>
+        <li><a class="current"href="#">Storm Center</a></li>
+        <li><a href="gallery-8.html">Gallery</a></li>
       </ul>
     </nav>
 
-    <form>
-        <label> Full Name*<input type="text" name="fname" required></label>
-        <label> Email<input type="email" name="email" placeholder="youremail@gmail.com"></label>
-        <label> Phone Number<input type="tel" name="phone" required></label>
-        <label> Zip code<input type="number" name="zip" required></label>
-        <label> Storm Date<input type="date" name="date"></label>
+    <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Personal Info.</legend>
+        <label class="top"> Full Name*<input type="text" name="fname" required></label>
+        <label class="top"> Email<input type="email" name="email" placeholder="youremail@gmail.com"></label>
+        <label class="top"> Phone Number<input type="tel" name="phone" required></label>
+        <label class="top"> Zip code<input type="number" name="zip" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Storm Info.</legend>
+        <label class="top"> Storm Date<input type="date" name="date"></label>
         
-        <label for="strom-type">Choose a Storm Type:</label>
-        <input list="storm-type" id="strom-type" name="storm-type" />
+        <label class="top" for="strom-type">Choose a Storm Type: 
+        <input list="storm-type" id="strom-type" name="storm-type" /></label>
 
         <datalist id="storm-type">    
         <option value="Flash Flood">
@@ -50,9 +56,11 @@
         <option value="Tornado">
         </datalist>
 
-        <label class="flexly" for="rating">Stor Severity: &nbsp;&nbsp;&nbsp;
+        <label id="felxy"  class="top" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
 			<input type="range" id="rating" value="5" min="1" max="10" step="1" 
-            list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            list="tickmarks" 
+            oninput="adjustRating(this.value)" 
+            onchange="adjustRating(this.value)">
 			<span id="ratingvalue">5</span>
 		</label>
 		<datalist id="tickmarks">
@@ -69,7 +77,7 @@
 			<option value="10">
 		</datalist>
 
-        <label> Storm region <select name="region"> 
+        <label class="top"> Storm region <select name="region"> 
             <option value=""> Select Region</option>
             <option value="preston"> Preston</option>
             <option value="soda-springs"> Soda Springs</option>
@@ -77,16 +85,18 @@
         </select> </label>
 
         <div>User in-danger level</div>
-        <label> <input type="radio" name="danger-level" value="yes" >Yes</label>
-        <label> <input type="radio" name="danger-level" value="no" >No</label>
-        <label> <input type="radio" name="danger-level" value="maybe" >Maybe</label>
+        <label class="sbs"> <input type="radio" name="danger-level" value="yes" >Yes</label>
+        <label class="sbs"> <input type="radio" name="danger-level" value="no" >No</label>
+        <label class="sbs"> <input type="radio" name="danger-level" value="maybe" >Maybe</label>
         
-        <label for="additional">Additional Information or comments:</label>
+        <label  class="top" for="additional">Additional Information or comments:</label>
         <textarea id="additional" name="additional" rows="4" cols="40">
         </textarea>
+        </fieldset>
 
-        <input type="submit" value="submit-information">
+        <input class="submitBtn" type="submit" value="submit">
     </form>
+    
 
     <footer>
       <p>
@@ -110,5 +120,6 @@
         },
       });
     </script>
+    <script src="js/adjust.js"></script>
   </body>
 </html>

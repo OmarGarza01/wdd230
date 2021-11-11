@@ -139,6 +139,7 @@ img.rgvimg {
   max-width: 100%;
   height: auto;
   margin-right: 2px;
+  
 }
 .cont {
   border: solid black;
@@ -195,6 +196,8 @@ body{
 h1{
   align-items: center;
 }
+
+
 
 
 /******************Form****************************/

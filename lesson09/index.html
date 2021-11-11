@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <img
+          src="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon-smallpx.png"
+          alt="site logo, a cloud"
+        />
+        <section class="heddings">
+          <h1>Valley Weather & Community</h1>
+          <q>Valley weather brings us together</q>
+        </section>
+      </header>
+       
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+          <li><a class="current" href="#">Home</a></li>
+          <li><a href="preston-8.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="towns"></div>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2020| Omar L. Garza | Idaho |<a
+            href="https://www.byui.edu/online"
+          >
+            BYUI Online Learning</a
+          >
+          | <br />
+          Current Date: <span class="footertext" id="currentDate"> </span>
+        </p>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lora", "Merriweather"],
+        },
+      });
+    </script>
+      <script src="js/towns.js"></script>
+
+</body>
+</html>

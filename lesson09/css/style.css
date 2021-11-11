@@ -1,0 +1,340 @@
+/*
+font-family: 'Lora', serif; 
+font-family: 'Merriweather', serif;
+
+$pacific-blue: #23b5d3ff;
+$pewter-blue: #75abbcff;
+$cadet-blue-crayola: #a2aebbff;
+*/
+
+/*****************************small**************************/
+h2,h1{
+  font-family: "Merriweather";
+}
+header img {
+  max-width: 100px;
+}
+header {
+  background:radial-gradient(#a2aebbff, #75abbcff);
+ 
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header q {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: white;
+}
+nav {
+  font-family: "Lora";
+
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #1e5799 0%,
+    #2989d8 50%,
+    #207cca 51%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+  display: none;
+}
+nav .current{
+  background-color: rgb(0, 60, 255);
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background: radial-gradient(#a2aebbff, #75abbcff);
+  font-family: "Lora", serif;
+  text-align: center;
+}
+
+.heroimg {
+  width: 100%;
+}
+.hero {
+  position: relative;
+}
+.weathersummary {
+  margin: 1em;
+  background: radial-gradient(#a2aebbff, #75abbcff);
+  border: solid black;
+  padding: 1rem;
+  text-align: center;
+}
+
+img.icon {
+  width: 100px;
+}
+.fivedayforcast_icon {
+  background: radial-gradient(#a2aebbff, #75abbcff);
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+article {
+  padding: 2em;
+  margin-top: 1em;
+  background: radial-gradient(#a2aebbff, #75abbcff);
+}
+.hurr {
+  max-width: 300px;
+  float: right;
+}
+
+img.rgvimg {
+  margin-top: 1em;
+  max-width: 100%;
+  height: auto;
+  margin-right: 2px;
+}
+.cont {
+  border: solid black;
+  background-color: blanchedalmond;
+  padding: 1em;
+  margin-left: 1.5rem;
+  margin-top: 1em;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.banner {
+  background-color: yellow;
+}
+.banner_content {
+  padding: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.banner_text {
+  flex-grow: 0.3;
+  line-height: 1;
+  font-family: "Lora", serif;
+}
+.banner_close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.fiveday{
+  display: none;
+}
+body{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#23b5d3ff ;
+}
+
+.gallery_img{
+  max-width: 300px;
+  height: 300px;
+  padding: 0.2em;
+  
+}
+
+.gallery_section{
+  margin-top:1em;
+  text-align: center;
+}
+h1{
+  align-items: center;
+}
+
+
+/******************Form****************************/
+
+form fieldset{
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px solid black;
+  padding: 1rem;
+  background-color: blanchedalmond;
+}
+ form legend{
+   font-size: 3rem;
+   font-weight: 400;
+   margin: 0 1rem;
+   padding: 0 0.5rem;
+ }
+ form label.top, form div{
+   padding-top: 1rem;
+   font-size: 1rem;
+ }
+ form label.top input, form label.top select{
+   display: block;
+   border: solid 1px black;
+   border-radius: 4px;
+   padding:.4rem;
+   width: 100%;
+   max-width: 20rem;
+ }
+form label.sbs{
+  padding: .5rem;
+}
+form input.submitBtn{
+  border-radius: 1rem;
+  background-color: blanchedalmond;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  font-size: 20px;
+}
+form label.top input:required{
+  border-left: red solid 3px;
+}
+form label.top input:required:valid{
+  border-left: green solid 3px;
+}
+
+
+/******************Towns**************************/
+
+.towns{
+    background-color: rgb(177, 172, 201);
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+
+
+
+
+
+
+
+
+/******************Medium*************************/
+@media only screen and (min-width: 35rem) {
+  nav button {
+    display: none;
+  }
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    float: left;
+    font-size: 0.8em;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 1rem;
+  }
+  nav ul.hide {
+    display: block;
+  }
+  .weathersummary {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background: radial-gradient(#a2aebbff, #75abbcff);
+    border: solid black;
+    padding: 0.5rem;
+  }
+
+  .gallery_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+  }
+/****towns**/
+.towns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+}
+
+
+
+/*****************Large***************************/
+
+@media only screen and (min-width: 64rem) {
+  header h1 {
+    font-size: 3em;
+  }
+  .fiveday{
+    display: contents;
+  }
+  .gallery_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gallery_img:hover{
+    box-shadow: 0 0 50px black;;
+    
+  }
+
+  /****************towns*********************/
+  .towns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+}
+

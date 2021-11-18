@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Preston</title>
+  </head>
+  <body>
+
+    
+<div class="banner" id="friday">
+  <div class="banner_content">
+    <div class="banner_text">
+      <strong>"Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."</strong>
+    </div>
+    <button class="banner_close" type="button"> ❌</button>
+  </div>
+</div>
+
+    <header>
+      <img
+        src="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon-smallpx.png"
+        alt="site logo, a cloud"
+      />
+      <section class="heddings">
+        <h1>Valley Weather & Community</h1>
+        <q>Valley weather brings us together</q>
+      </section>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-8.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Rio Grand Valley</h2>
+      <div class="hero">
+        <picture>
+        <source  media="(max-width: 400px)" srcset="images\Inkedwdd230_image_franklinOriginal_300px_LI.jpg">
+        <source  media="(max-width: 600px)" srcset="images\Inkedwdd230_image_franklinOriginal_500px_LI.jpg">
+        <source  media="(max-width: 800px)" srcset="images\Inkedwdd230_image_franklinOriginal_800px_LI.jpg">
+        <img src="images/Inkedwdd230_image_franklinOriginal_800px_LI.jpg" alt="clouds in the sky" class="heroimg"/>
+        <section class="weathersummary">
+        </picture>
+          <h3>Weather Summery</h3>
+          <p>Currently: Sunny</p>
+          <p id="temp">High: 98 °F</p>
+          <p>Humidity: 100%</p>
+          <p id="speed">Wind Speed: 10 mph</p>
+          <p >Windchill: <span id="windchill"></span> </p>
+        </section>
+      </div>
+       
+      <div class="fiveday">
+      <section>
+        <h2>5 Day Forecast</h2>
+      </section>
+      <div class="fivedayforcast_icon">
+        <img class= "icon" src="images/sun.png" alt= "sunny icon">
+        <img class= "icon" src="images/cloudy-day.png" alt= "partly cloudy icon">
+        <img class= "icon" src="images/cloudy.png" alt="raining icon">
+        <img class= "icon" src="images/sunny.png" alt="sunny day icon">
+        <img class= "icon" src="images/sun.png" alt="sunny icon">
+      </div>
+    </div>
+
+      
+      <section>
+        <img class="hurr" src="images/hurrcaine.jpg" alt="hurricane">
+        <article>
+          <h2>Prepare for Hurricane Omar!</h2>
+          <p>by omar garza</p>
+       
+          <p>   Hurricane omar is expected to hit the South of Texas in about 2 days. It has grown to a category 5 in such a short time.
+           Experts recommend that you prepare or leave the state of Texas. This record breaking hurricane will be the 
+           most powerful hurricane to hit Texas in over 50 years. </p> 
+         </article>
+       </section>
+          
+
+      <div class="contact">
+        <img class="rgvimg" src="images/rgv-map-large.jpg" alt="img of RGV">
+        <section class="cont">
+          <p>Contact Information</p>
+          <p>Name: Omar</p>
+          <p>Address: Mcallen Tx</p>
+          <p>Phone number: (956)123-4567</p>
+          <p>Email: omar@valleyweather.com</p>
+          <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook icon" ></a> 
+          <a href="https://twitter.com/"> <img src="images/twitter.png" alt="twitter icon"></a>
+           <a href="https://www.youtube.com/"> <img src="images/youtube.png" alt="youtube icon"></a>
+        </section>
+        
+     </div>
+
+    </main>
+    <footer>
+      <p>
+        &copy; 2020| Omar L. Garza | Idaho |<a
+          href="https://www.byui.edu/online"
+        >
+          BYUI Online Learning</a
+        >
+        | <br />
+        Current Date: <span class="footertext" id="currentDate"> </span>
+      </p>
+    </footer>
+    <script src="js/banner.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+       WebFont.load({
+        google: {
+          families: ["Lora", "Merriweather"],
+        },
+      });
+    </script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>

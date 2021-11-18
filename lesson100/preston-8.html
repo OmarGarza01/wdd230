@@ -51,14 +51,28 @@
         <source  media="(max-width: 600px)" srcset="images\Inkedwdd230_image_franklinOriginal_500px_LI.jpg">
         <source  media="(max-width: 800px)" srcset="images\Inkedwdd230_image_franklinOriginal_800px_LI.jpg">
         <img src="images/Inkedwdd230_image_franklinOriginal_800px_LI.jpg" alt="clouds in the sky" class="heroimg"/>
+
+
         <section class="weathersummary">
         </picture>
           <h3>Weather Summery</h3>
-          <p>Currently: Sunny</p>
-          <p id="temp">High: 98 °F</p>
-          <p>Humidity: 100%</p>
-          <p id="speed">Wind Speed: 10 mph</p>
-          <p >Windchill: <span id="windchill"></span> </p>
+          <p>Currently: <span id="currently"></span></p>
+          <p> 
+            Temperature:
+            <span id="temp"> </span> &deg;F
+          </p>
+          <p> Humidity:
+            <span id="humidity"></span>
+            %
+          </p>
+          <p id="speed">
+            Windspeed
+            <span id="windspeed"></span>
+            mph
+          </p>
+          <p >Windchill: <span id="windchillapi"></span> 
+            &deg;F
+          </p>
         </section>
       </div>
        
@@ -126,6 +140,6 @@
         },
       });
     </script>
-    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@ fetch(apiURL)
   .then((jsObject) => {
    
     console.log(jsObject);
-    const noon = jsObject.list.filter(x => x.dt_txt.includes('12:00:00'));
+    const noon = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
     console.log(noon);
 
     const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -13,7 +13,12 @@ fetch(apiURL)
         let thedate = new Date(forecast.dt_txt);
         document.querySelector(`#day${day + 1}`).textContent = weekdays[thedate.getDay()];
         document.querySelector(`#for${day + 1}`).textContent = forecast.main.temp;
+        
         day++;
     })
 
+    
+
+
 });
+

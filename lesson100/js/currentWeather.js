@@ -1,5 +1,5 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=a21468c147a898bf5b43fd9b2448580d';
-fetch(apiURL)
+const apiURL1 = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=a21468c147a898bf5b43fd9b2448580d';
+fetch(apiURL1)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
@@ -10,11 +10,4 @@ fetch(apiURL)
     document.getElementById('windchillapi').textContent = jsObject.main.feels_like.toFixed(0);
     document.getElementById('currently').textContent = jsObject.weather[0].description;
 
-
-    
-
-    
-
-
-
-  });
+});

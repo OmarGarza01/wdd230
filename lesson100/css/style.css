@@ -197,7 +197,9 @@ h1{
   align-items: center;
 }
 
-
+.displaynone{
+  display: none;
+}
 
 
 /******************Form****************************/
@@ -320,9 +322,7 @@ form label.top input:required:valid{
   header h1 {
     font-size: 3em;
   }
-  .fiveday{
-    display: contents;
-  }
+ 
   .gallery_section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -338,6 +338,19 @@ form label.top input:required:valid{
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-
+  /*******************weather api**********************/
+  .fiveday{
+    display: contents;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: solid 1px;
+    background-color:#a2aebbff;
+    align-items: center;
+    padding: 10px;
+  }
+  .displaynone{
+    display: contents;
+  }
+  
 }
 

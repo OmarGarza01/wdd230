@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Preston</title>
-  </head>
-  <body>
-
-    
-<div class="banner" id="friday">
-  <div class="banner_content">
-    <div class="banner_text">
-      <strong>"Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."</strong>
-    </div>
-    <button class="banner_close" type="button"> ❌</button>
-  </div>
-</div>
+    <title>Soda Springs</title>
+</head>
+<body>
+    <div class="banner" id="friday">
+        <div class="banner_content">
+          <div class="banner_text">
+            <strong>"Saturday = Soda Spring food eating contest!  4:00 p.m. Saturday at the city park."</strong>
+          </div>
+          <button class="banner_close" type="button"> ❌</button>
+        </div>
+      </div>
 
     <header>
-      <img
-        src="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon-smallpx.png"
-        alt="site logo, a cloud"
-      />
-      <section class="heddings">
-        <h1>Valley Weather & Community</h1>
-        <q>Valley weather brings us together</q>
-      </section>
-    </header>
+        <img
+          src="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon-smallpx.png"
+          alt="site logo, a cloud"
+        />
+        <section class="heddings">
+          <h1>Valley Weather & Community</h1>
+          <q>Valley weather brings us together</q>
+        </section>
+     </header>
 
-    <nav class="clearfix">
+     <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;Menu</button>
       <ul id="primaryNav" class="hide">
         <li><a href="index.html">Home</a></li>
-        <li><a class="current" href="#">Preston</a></li>
-        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a  href="preston.html">Preston</a></li>
+        <li><a class="current" href="sodasprings.html">Soda Springs</a></li>
         <li><a href="fishhaven.html">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -44,14 +42,14 @@
     </nav>
 
     <main>
-      <h2>Rio Grand Valley</h2>
+        <h2>Soda Springs</h2>
       <div class="hero">
         <picture>
-        <source  media="(max-width: 400px)" srcset="images\Inkedwdd230_image_franklinOriginal_300px_LI.jpg">
-        <source  media="(max-width: 600px)" srcset="images\Inkedwdd230_image_franklinOriginal_500px_LI.jpg">
-        <source  media="(max-width: 800px)" srcset="images\Inkedwdd230_image_franklinOriginal_800px_LI.jpg">
-        <img src="images/Inkedwdd230_image_franklinOriginal_800px_LI.jpg" alt="clouds in the sky" class="heroimg"/>
-
+        <source  media="(max-width: 400px)" srcset="images\pexels-pixabay-159406-400px.jpg">
+        <source  media="(max-width: 600px)" srcset="images\pexels-pixabay-159406-600px.jpg">
+        <source  media="(max-width: 800px)" srcset="images\pexels-pixabay-159406-800px.jpg">
+        <img src="images/pexels-pixabay-159406-800px.jpg" alt="clouds in the sky" class="heroimg"/>
+        
 
         <section class="weathersummary">
         </picture>
@@ -75,7 +73,7 @@
           </p>
         </section>
       </div>
-       
+
       <h2 class="displaynone">5 Day Forecast</h2>
       <div class="fiveday">
     
@@ -110,7 +108,6 @@
         </span> &nbsp;<img src="" alt="" id="icon5" />
         </section>
       </div>
-    
 
       <section>
         <img class="hurr" src="images/hurrcaine.jpg" alt="hurricane">
@@ -125,8 +122,8 @@
        </section>
 
        <div class="event1"></div>
-          
 
+       
       <div class="contact">
         <img class="rgvimg" src="images/rgv-map-large.jpg" alt="img of RGV">
         <section class="cont">
@@ -139,34 +136,36 @@
           <a href="https://twitter.com/"> <img src="images/twitter.png" alt="twitter icon"></a>
            <a href="https://www.youtube.com/"> <img src="images/youtube.png" alt="youtube icon"></a>
         </section>
-        
      </div>
+     <footer>
+        <p>
+          &copy; 2020| Omar L. Garza | Idaho |<a
+            href="https://www.byui.edu/online"
+          >
+            BYUI Online Learning</a
+          >
+          | <br />
+          Current Date: <span class="footertext" id="currentDate"> </span>
+        </p>
+      </footer>
+
+
+
 
     </main>
-    <footer>
-      <p>
-        &copy; 2020| Omar L. Garza | Idaho |<a
-          href="https://www.byui.edu/online"
-        >
-          BYUI Online Learning</a
-        >
-        | <br />
-        Current Date: <span class="footertext" id="currentDate"> </span>
-      </p>
-    </footer>
-    <script src="js/banner.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
        WebFont.load({
         google: {
           families: ["Lora", "Merriweather"],
         },
       });
-    </script>
-    <script src="js/5dayforcastpreston.js"></script>
-    <script src="js/currentWeatherpreston.js"></script>
-    <script src="js/eventpreston.js"></script>
-    
-  </body>
+</script>
+<script src="js/scripts.js"></script>
+<script src="js/5dayforcastsodasprings.js"></script>
+<script src="js/currentweathersodasprings.js"></script>
+<script src="js/banner.js"></script> 
+<script src="js/eventsodasprings.js"></script>
+  
+</body>
 </html>

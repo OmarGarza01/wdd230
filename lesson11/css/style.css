@@ -102,6 +102,7 @@ footer {
 
 .heroimg {
   width: 100%;
+  max-height: 400px;
 }
 .hero {
   position: relative;

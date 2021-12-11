@@ -1,0 +1,214 @@
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
+
+ A7AAA4
+ BDD2A6
+ B9BEA5
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap');
+
+/*****************************small**************************/
+/**************************body******************************/
+body{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+/**************************header****************************/
+header img {
+    max-width: 100px;
+    padding: 5px;;
+  }
+  header {
+    background-color: #BDD2A6;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/**************************nav****************************/
+nav ul.hide {
+    display: none;
+  }
+  nav button {
+    margin: 0.2rem 2%;
+    background-color: #A7AAA4;
+    border: solid;
+    font-size: 1.6rem;
+    color:Black;
+  }
+  nav ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav .current{
+    background-color:rgb(207, 207, 236);
+  }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/**************************footer****************************/
+footer {
+    background: #BDD2A6;
+    font-family: "Lora", serif;
+    text-align: center;
+  }
+
+/**************************main****************************/
+.heroimg {
+  width: 100%;
+  height: 400px;
+}
+.hero {
+  position: relative;
+}
+.weathersummary {
+  margin: 1em;
+  background:  #B9BEA5;
+  border: solid black;
+  padding: 1rem;
+  text-align: center;
+}
+/*****resturants******/
+.three{
+  margin-top: 2em;
+  
+}
+.three p{
+  text-align: center;
+}
+.threee{
+  border: solid 1px #A7AAA4;
+  background-color: #BDD2A6;
+  padding: .5em;
+  margin: 1px;
+}
+
+
+/****purpose******/
+
+.purpose {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 18px;
+  
+  padding: .8em;
+  margin-top: 2em;
+}
+.purpose h2{
+  text-align: center;
+}
+.purpose1{
+  background-color: #B9BEA5;
+  margin-right: 1em;
+  border: solid 1px #A7AAA4;
+  padding: .5em;
+}
+
+/*******upcommingEvents*******/
+.event{
+  background-color: #B9BEA5;
+  margin-top: 2em;
+  padding: .5em;
+  font-size: 18px;
+}
+.event h2{
+  text-align: center;
+}
+/****contact us****************/
+.cont {
+  border: solid #A7AAA4 1px;
+  background-color: #BDD2A6;
+  padding: .5em;
+  margin-top: 2em;
+  font-size: 18px;
+}
+.contact {
+  text-align: center;
+}
+.section2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/******3 day forecast******/ 
+
+.threeday{
+  border: solid 1px #A7AAA4;
+  background-color:#BDD2A6;
+  text-align: center;
+  padding: 10px;
+}
+
+
+  /******************Medium*************************/
+@media only screen and (min-width: 35rem) {
+
+    /***NAV****/
+nav button {
+    display: none;
+}
+nav ul.hide {
+   display: block;
+}
+nav ul li {
+    float: left;
+    font-size: 0.8em;
+  }
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.6rem 1rem;
+  }
+  /*****resturants******/
+.three{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+.weathersummary {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+/******3 day forecast******/ 
+
+.threeday{
+  display: contents;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+}
+
+
+  /*****************Large***************************/
+
+@media only screen and (min-width: 64rem) {
+
+  .three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+  }
+}

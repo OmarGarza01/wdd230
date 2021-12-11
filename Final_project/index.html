@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/City-of-Pharr-Logo-1.png" alt="city of pharr logo" />
+      <section class="heddings">
+        <h1>City of Pharr Chamber of Commerce</h1>
+      </section>
+    </header>
+
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;Menu</button>
+      <ul id="nav" class="hide">
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="pharr.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+
+      <div class="hero">
+        <picture>
+        <source  media="(max-width: 400px)" srcset="images/municiple-400px.jpg">
+        <source  media="(max-width: 600px)" srcset="images/municiple-600px.jpg">
+        <source  media="(max-width: 800px)" srcset="images/municiple800px.jpg">
+        <img src="images/municiple800px.jpg" alt="city of pharr municipal" class="heroimg"/>
+        
+        <section class="weathersummary">
+        </picture>
+          <h3>Weather Summery</h3>
+          <p>Currently: <span id="currently"></span></p>
+          <p> 
+            Temperature:
+            <span id="temp"> </span> &deg;F
+          </p>
+          <p> Humidity:
+            <span id="humidity"></span>
+            %
+          </p>
+          <p id="speed">
+            Windspeed
+            <span id="windspeed"></span>
+            mph
+          </p>
+          <p >Windchill: <span id="windchillapi"></span> 
+            &deg;F
+          </p>
+        </section>
+      </div>
+
+      
+    <div class="three">
+      <section class="threee">
+      <img src="images/junction.jfif" alt="junction cafe">
+      <p>Join Us! At Junction Cafe</p>
+      </section>
+
+      <section class="threee">
+      <img src="images/muelle37.jfif" alt="muelle 37">
+      <p>Come over and try the best seafood in town</p>
+      </section>
+
+      <section class="threee">
+      <img src="images/delias.jfif" alt="delias tamales">
+      <p>Come try the best tamales in town!</p>
+      </section>
+    </div>
+
+  <div class="purpose"> 
+   <section class="purpose1"> 
+      <h2>Our Purpose</h2>
+      <p>
+        The purpose of this site is it bring small business together.
+         As we do this we will grow together and improve the quality of life of our community. We want to
+         show the people of our community the best of our small business that the city has to offer. 
+      </p>
+      
+      </section>
+    <section class="purpose1">
+    <h2>Join Us Today!</h2>
+    <p>It is not only good for the community, but its great for your Business! Our Goal is to 
+      help you and the community grow together!
+    </p>
+    <a href="join.html"> Click Here to Join!</a>
+    </section>
+  </div>
+ 
+  
+  <div class="threeday">
+    <h2>3 Day Forecast</h2>
+    <section>
+    <p><span id="day1"></span> 
+    <span id="for1"></span>&deg; F </p>
+    <img src="" alt="" id="icon1" />
+    </section>
+
+    <section>
+    <p><span id="day2"></span>
+    <span id="for2"></span>&deg; F </p>
+    <img src="" alt="" id="icon2" />
+     </section>
+
+     <section>
+    <p><span id="day3"></span>
+    <span id="for3"></span>&deg; F </p>
+    <img src="" alt="" id="icon3" />
+    </section>
+    </div>
+
+  
+
+    <section class="event">
+      <h2>Upcoming Events</h2>
+      <div class="event1">
+        <ul>
+          <li> December 24: Delias Tamales 20% off!</li>
+          <li> January 1: BUY 1 get one free at Muelle37!</li>
+          <li> January 7: All you can eat buffet 50% off at Junction Cafe</li>
+
+        </ul>
+      </div>
+    </section>
+
+    <div class="contact">
+      <section class="cont">
+        <h3>Contact Information</h3>
+        <p>Address: Pharr Tx</p>
+        <p>Phone number: (956)123-4567</p>
+        <p>Email: omar@valleyweather.com</p>
+        <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook icon" ></a> 
+        <a href="https://twitter.com/"> <img src="images/twitter.png" alt="twitter icon"></a>
+      </section>
+      </div>
+  
+    </main>
+
+   
+
+    <footer>
+      <p>
+        &copy; 2020| Omar L. Garza | Idaho |<a
+          href="https://www.byui.edu/online"
+        >
+          BYUI Online Learning</a
+        >
+        |<br />
+        Last Modified: <span class="footertext" id="lastmodified"> </span>
+      </p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lastmodified.js"></script>
+    <script src="js/currentWeather.js"></script>
+    <script src="js/3dayforcastpharr.js"></script>
+  </body>
+</html>

@@ -228,7 +228,10 @@ form label.top input, form label.top select{
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr;
-
+}
+.members img{
+  max-width: 200px;
+  margin: auto;
 }
 
   /******************Medium*************************/

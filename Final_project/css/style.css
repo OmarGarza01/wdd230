@@ -218,7 +218,18 @@ form label.top input, form label.top select{
   max-width: 100%;
   margin-top: 50px;
 }
+/****Members*******/
 
+.members{
+  background-color: #BDD2A6;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
 
   /******************Medium*************************/
 @media only screen and (min-width: 35rem) {
@@ -258,6 +269,10 @@ nav ul li a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.members{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 }
 
@@ -270,5 +285,9 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
    
+  }
+  .members{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

@@ -20,14 +20,57 @@
       <button onclick="toggleMenu()">&#9776;Menu</button>
       <ul id="nav" class="hide">
         <li><a href="index.html">Home</a></li>
-        <li><a href="pharr.html">City</a></li>
+        <li><a href="pharr.html">Pharr</a></li>
         <li><a class="current" href="join.html">Join</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <main></main>
+    <main>
+
+      <h2>Join us today!</h2>
+
+      <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Personal Info.</legend>
+        <label class="top"> First Name*<input type="text" name="fname" required></label>
+        <label class="top"> Last Name*<input type="text" name="fname" required></label>
+        <label class="top"> Title: <input type="text" name="tile"></label>
+        <label class="top"> Email:<input type="email" name="email" placeholder="youremail@gmail.com"></label>
+        <label class="top"> Cell Number:<input type="tel" name="phone" required></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Business Info.</legend>
+          <label class="top"> Business Name*<input type="text" name="bname" required></label>
+          <label class="top"> Business Address:<input type="text" name="baddress"></label>
+          <label class="top"> Business Website:<input type="text" name="website"></label>
+          <label  class="top" for="additional">Additional Information or comments:</label>
+          <textarea id="additional" name="additional" rows="4" cols="40">
+          </textarea>
+          </fieldset>
+
+       
+
+          <fieldset>
+        <legend>Select Membership</legend>
+          <label class="top"> Type <select name="Membership"> 
+          <option value=""> Select Membership. Higher tiers include lower tier perks</option>
+          <option value="non-profit"> Non-Profit($100) directory listings </option>
+          <option value="bronze"> Bronze($200)  social media posts</option>
+          <option value="silver"> Silver ($400) business trainings </option>
+          <option value="gold"> Gold ($1000) sponsorships with levels of advertising</option>
+          </select> </label>
+          </fieldset> 
+
+          <input class="submitBtn" type="submit" value="submit">
+       </form>
+
+
+
+
+    </main>
     <footer>
       <p>
         &copy; 2020| Omar L. Garza | Idaho |<a

@@ -11,17 +11,20 @@ fetch(requestURL)
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
         let p = document.createElement('p');
+        let p1= document.createElement('p');
        
 
         h2.textContent = members[i].name;
         image.setAttribute('src', members[i].photo);
-        p.textContent = members[i].address;
+        p.textContent = "Address: " + members[i].address;
+        p1.textContent = "Phone: " + members[i].phone;
        
 
 
         member.appendChild(h2);
         member.appendChild(image);
         member.appendChild(p);
+        member.appendChild(p1);
         
 
 

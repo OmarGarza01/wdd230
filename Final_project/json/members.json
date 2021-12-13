@@ -3,42 +3,56 @@
       {
         "name": "Junction Cafe",
         "photo": "images/junction.jfif",
+        "phone": " (956) 783-4885 ",
+        "address":"11 S Cage Blvd, Pharr, TX 78577",
         "weblink": "https://www.facebook.com/Junction-Cafe-819871714812504/"
     
       },
       {
         "name": "Delias Tamales",
         "photo": "images/delias.jfif",
+        "phone": "(956) 783-7799",
+        "address":"2000 N Jackson Rd, Pharr, TX 78577",
         "weblink":"https://deliastamales.com/"
         
       },
       {
         "name": "Muelle37",
         "photo": "images/muelle37.jfif",
+        "phone": "(956) 961-4421",
+        "address":"1000 N Cage Blvd, Pharr, TX 78577",
         "weblink":"http://www.muelle37.com/"
         
       },
       {
         "name": "Whataburger",
         "photo": "images/whataburger.jpg",
+        "phone":"(956) 781-3611",
+        "address":"100 E Expressway 83, Pharr, TX 78577",
         "weblink":"https://locations.whataburger.com/tx/pharr/100-east-expressway-83.html?utm_source=yextpages&utm_medium=locallistings&utm_campaign=yextpages"
         
       },
       {
         "name": "Reynera Bakery",
         "photo": "images/reynera.jpg",
+        "phone": "(956) 702-1665",
+        "address":"132 W Clark St Pharr, TX 78577",
         "weblink": "n/a"
         
       },
       {
         "name": "Dona Tere",
         "photo": "images/donatere.jfif",
+        "phone": "(956) 782-8373",
+        "address":"7005 S Cage Blvd, Pharr, TX 78577",
         "weblink": "https://www.facebook.com/Gorditas-Do%C3%B1a-Tere-2-878152032521972/"
         
       },
       {
         "name": "Deligencia",
         "photo": "images/deligencia.jfif",
+        "phone": "(956) 781-1030",
+        "address":"201 W U.S. Hwy 83, Pharr, TX 78577",
         "weblink": "https://www.facebook.com/Diligencias-Taqueria-219772274854032/"
         
       }
